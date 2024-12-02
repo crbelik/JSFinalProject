@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>WEB-115 Final Project</title>
+      <link rel="stylesheet" href="style.css">
+      <header id="headerBar">
+         <div class="headerLeft">Collin Belik</div>
+         <div class="headerCenter">Build Your Meal</div>
+         <div class="headerRight">Web Markup and Scripting<br>2024FA.WEB.115.0001</div>
+      </header>
+   </head>
+   <body>
+      <div id="daysContainer">
+         <!--Days of the week Generate Here-->
+      </div>
+
+      <!--Personal Information-->
+      <section id="personalInfoSection">
+         <h3>Personal Information</h3>
+         <!--Gather Personal Information FORM-->
+         <form id="getInformationForm">
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email" required><br>
+            <label for="goal">Goal for the week:</label><br>
+            <textarea name="goal" id="goal" rows="5" style="resize: none;"></textarea><br>
+         </form>
+      </section>
+
+      <section id="buttons">
+         <button id="generateMealPlanButton">Generate Plan</button>
+         <button id="clearFormButton">Clear</button>
+         <button id="printFormButton">Print</button>
+      </section>
+
+      <footer id="footerbar">
+         <p>&copy; 2024 Perfectly Portioned Fitness. All rights reserved.</p>
+      </footer>
+
+      <script src="projectJS.js"></script>
+   </body>
+</html>

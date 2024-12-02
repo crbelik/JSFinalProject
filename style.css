@@ -1,0 +1,183 @@
+body {
+	background: #e8f0f2;
+	color: #34495e;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background-color: #278888;
+	border-radius: 8px;
+	border: none;
+	color: #ecf0f1;
+	cursor: pointer;
+	display: inline-block;
+	font-size: medium;
+	margin: 0 5px;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+button:hover {
+	background: #16a085;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transform: scale(1.0);
+}
+
+h1 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+input {
+	background-color: #f7f9fb;
+	border-radius: 6px;
+	border: 1px solid #b0c4de;
+	box-sizing: border-box;
+	color: #34495e;
+	font-size: 1rem;
+	margin-bottom: 12px;
+	padding: 5px;
+	width: 100%;
+}
+
+input:focus {
+	border: 2px solid #2980b9;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	outline: none;
+}
+
+#buttons {
+	grid-column: span 4;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#daysContainer {
+	display: grid;
+	flex: 1;
+	gap: 20px;
+	grid-auto-rows: 1fr;
+	grid-template-columns: repeat(4,1fr);
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+#footerbar {
+	background-color: #2c3e50;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	color: #ecf0f1;
+	font-size: small;
+	margin-top: 20px;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#goal {
+	border-radius: 4px;
+	border: 1px solid #b0c4de;
+	box-sizing: border-box;
+	font-size: 1rem;
+	height: 100px;
+	padding: 10px;
+	width: 100%;
+}
+
+#headerBar {
+	align-items: center;
+	background-color: #2c3e50;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	color: #ecf0f1;
+	display: flex;
+	font-family: 'Arial', sans-serif;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+#personalInfoSection {
+	height: 89.5%;
+}
+
+#personalInfoSection, .dayCard {
+	align-self: start;
+	background: linear-gradient(135deg,#e6f7ff,#d0e8f2);
+	border-radius: 10px;
+	border: 1px solid #b0c4de;
+	box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+	color: #34495e;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	text-align: left;
+	transition: all 0.3s ease-in-out;
+}
+
+#personalInfoSection:hover, .dayCard:hover {
+	transform: scale(1.03);
+	transition: all 0.2s ease-in-out;
+}
+
+.dayHeader {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.daySection, .weeklyGoal {
+	align-items: start;
+	background: linear-gradient(135deg,#e6f7ff,#d0e8f2);
+	border-radius: 8px;
+	border: 1px solid #b0c4de;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	color: #34495e;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	justify-content: space-between;
+	padding: 20px;
+	text-align: left;
+	transition: all 0.3s ease-in-out;
+}
+
+.genMealPlan {
+	display: grid;
+	gap: 20px;
+	grid-auto-rows: minmax(200px,auto);
+	grid-template-columns: repeat(4,1fr);
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+.headerCenter {
+	font-size: larger;
+}
+
+.headerCenter, .headerLeft, .headerRight {
+	flex: 1;
+	font-size: medium;
+	text-align: center;
+}
+
+.headerLeft {
+	text-align: left;
+}
+
+.headerRight {
+	text-align: right;
+}
+
+.meal {
+	margin-bottom: 8px;
+}
+
+.weeklyGoal {
+	justify-content: flex-start;
+}
